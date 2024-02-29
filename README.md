@@ -27,14 +27,15 @@ password: 123456
 You can see more authentication credentials in the database.   
 
 
-Below you can see some views of the application:    
+Below you can see some views of the application: 
+
 Log in View   
 
 ![Login](https://github.com/paveldaria/BankingApplication/assets/57196003/4e63a8ef-c4f2-48ba-87ac-d8bfba05a4d8)
 
 
 Admin View:   
-Create Clients
+Create Client
    
 ![Admin_CreateClient](https://github.com/paveldaria/BankingApplication/assets/57196003/da1239b7-b4a6-4cb7-9dd3-fde46118e433)
 
