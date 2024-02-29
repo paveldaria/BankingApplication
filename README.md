@@ -24,7 +24,7 @@ If you want to log in as a client, you can create new clients from the Admin acc
 username: dariapavel   
 password: 123456   
 
-You can see more authentication credentials in the database.   
+You can find more authentication credentials in the database.   
 
 
 Below you can see some views of the application: 
