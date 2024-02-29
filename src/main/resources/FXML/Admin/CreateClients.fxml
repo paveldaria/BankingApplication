@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" styleClass="main_container" stylesheets="@../../CSS/AdminCreateClients.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mazebank.Controllers.Admin.CreateClientsController">
+
+      <VBox layoutX="33.0" prefHeight="600.0" prefWidth="263.0" styleClass="Vbox" AnchorPane.leftAnchor="50.0">
+   
+         <Text fill="#393939" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Title" text="Create a new client account" wrappingWidth="262.2164001464844">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Text>
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="First name">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="firstName_ca" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="Last name">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="lastName_ca" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="Username">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="username_ca" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="Password">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Text>
+            <PasswordField fx:id="password_ca" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="Checking account amount">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="checkingAcc_amount" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Vbox_Text" text="Savings account amount">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="savingAcc_amount" prefHeight="30.0" styleClass="Vbox_TextField" />
+            <Button fx:id="createAccountButton" mnemonicParsing="false" prefHeight="19.0" prefWidth="263.0" text="Create account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin></Button>
+            <Label fx:id="messageLabel" />
+
+      </VBox>
+
+</AnchorPane>

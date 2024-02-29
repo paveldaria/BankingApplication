@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" styleClass="mainWindow" stylesheets="@../../CSS/AdminDeposit.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mazebank.Controllers.Admin.DepositController">
+
+      <VBox layoutX="28.0" layoutY="27.0" prefHeight="538.0" prefWidth="237.0" styleClass="depositSection" stylesheets="@../../CSS/AdminDeposit.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="depositTitle" text="Deposit funds" />
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="depositText" text="Search by username">
+         <VBox.margin>
+            <Insets top="29.0" />
+         </VBox.margin></Text>
+            <TextField fx:id="username_search" styleClass="depositTextField" />
+            <Button fx:id="search_button" mnemonicParsing="false" styleClass="depositButton" text="Search">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Button>
+            <Label fx:id="message_label_search" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="depositText" text="Amount">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="deposit_funds_admin" styleClass="depositTextField" />
+            <Button fx:id="deposit_button" mnemonicParsing="false" styleClass="depositButton" text="Deposit">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin></Button>
+      <Label fx:id="message_label_deposit" />
+
+      </VBox>
+
+</AnchorPane>

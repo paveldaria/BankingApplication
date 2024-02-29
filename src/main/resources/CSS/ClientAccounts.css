@@ -1,0 +1,37 @@
+.main_container {
+     -fx-background-color: #EEEEEE;
+ }
+
+ .Vbox {
+     -fx-background-color: #EEEEEE;
+     -fx-spacing: 10;
+     -fx-alignment: center-left;
+ }
+
+ .main_container Button {
+     -fx-background-color: #004d4d;
+     -fx-text-fill: #ffffff;
+     -fx-font-size: 1.2em;
+     -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+     -fx-pref-width: 250;
+ }
+
+ .textField {
+     -fx-pref-width: 250;
+     -fx-background-radius: 5;
+     -fx-text-fill: #393939;
+     -fx-font-size: 1.2em;
+     -fx-background-color: #FFFFFF;
+     -fx-effect: dropshadow(three-pass-box, #AAAAAA, 2, 0, 0, 2);
+
+ }
+
+.Vbox_Text {
+    -fx-font-size: 1.3em;
+    -fx-fill: #393939;
+}
+
+.Vbox_Titles {
+    -fx-font-size: 1.4em;
+    -fx-fill: #393939;
+}

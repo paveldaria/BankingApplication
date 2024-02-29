@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="180.0" styleClass="mainVbox" stylesheets="@../../CSS/ClientMenuStylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mazebank.Controllers.Client.ClientMenuController">
+   <AnchorPane prefHeight="600.0" prefWidth="180.0" styleClass="anchorPane">
+      <children>
+      
+            <VBox prefHeight="120.0" prefWidth="160.0" styleClass="firstVbox" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+      
+            </VBox>
+            <VBox prefHeight="483.0" prefWidth="180.0" styleClass="secondVbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+      
+                  <Button fx:id="dashboardButton" mnemonicParsing="false" styleClass="secondVbox_Button_white" text="Home">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+                  <Button fx:id="sendMoneyButton" mnemonicParsing="false" styleClass="secondVbox_Button_white" text="Transfer" />
+                  <Button fx:id="accountsButton" mnemonicParsing="false" styleClass="secondVbox_Button_white" text="Accounts" />
+                  <Line endX="120.0" stroke="#dad7d7" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" styleClass="secondVbox_Button_green" text="Logout" textFill="WHITE" />
+      
+            </VBox>
+      </children>
+      <VBox.margin>
+         <Insets right="3.0" />
+      </VBox.margin>
+   </AnchorPane>
+
+</VBox>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" styleClass="dashboard" stylesheets="@../../CSS/ClientDashboardStylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mazebank.Controllers.Client.HomeController">
+      <Text fx:id="firstName" layoutX="57.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi, Daria" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></Text>
+      <Text layoutX="60.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="deposit_section_Text" text="My accounts" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <HBox layoutX="60.0" layoutY="152.0" prefHeight="170.0" prefWidth="484.0" styleClass="accounts_view" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="176.0" AnchorPane.topAnchor="152.0">
+            <AnchorPane prefHeight="200.0" prefWidth="235.0" styleClass="account">
+                  <Label fx:id="checking_balance" layoutX="21.0" layoutY="23.0" text="\$5 000" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="checking_number" layoutX="25.0" layoutY="103.0" text="**** **** **** 1234" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Text fill="#f8f8f8" layoutX="25.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="49.0" layoutX="147.0" layoutY="49.0" stroke="WHITE" strokeType="INSIDE" styleClass="account_rectangular" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="15.0" />
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="235.0" styleClass="account">
+                  <Label fx:id="savings_balance" layoutX="21.0" layoutY="23.0" text="\$10 000" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="savings_number" layoutX="25.0" layoutY="103.0" text="**** **** **** 1234" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="49.0" layoutX="147.0" layoutY="49.0" stroke="WHITE" strokeType="INSIDE" styleClass="account_rectangular" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="15.0" />
+            </AnchorPane>
+      </HBox>
+      <HBox layoutX="57.0" layoutY="341.0" prefHeight="200.0" prefWidth="470.0" AnchorPane.leftAnchor="50.0">
+            <VBox prefHeight="235.0" prefWidth="235.0" styleClass="deposit_section">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="deposit_section_Text" text="Deposit Section" />
+                  <TextField fx:id="depositField" prefHeight="25.0" prefWidth="78.0" styleClass="deposit_section_TextField" />
+                  <Button fx:id="depositButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="213.0" styleClass="deposit_section_Button" text="Deposit" />
+                  <Label fx:id="depositMessageLabel" />
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+            <VBox prefHeight="200.0" prefWidth="235.0" styleClass="deposit_section">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="deposit_section_Text" text="Withdrawal Section">
+            <font>
+               <Font size="24.0" />
+            </font></Text>
+                  <TextField fx:id="withdrawField" styleClass="deposit_section_TextField" />
+                  <Button fx:id="withdrawButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" styleClass="deposit_section_Button" text="Withdraw" />
+                  <Label fx:id="withdrawMessageLabel" />
+            </VBox>
+      </HBox>
+</AnchorPane>

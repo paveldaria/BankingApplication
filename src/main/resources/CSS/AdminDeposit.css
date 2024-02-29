@@ -1,0 +1,40 @@
+.mainWindow{
+    -fx-background-color: #EEEEEE;
+}
+
+.depositSection{
+    -fx-background-color: #EEEEEE;
+    -fx-alignment: center-left;
+    -fx-spacing: 7;
+}
+
+.depositText{
+        -fx-font-size: 1.3em;
+        -fx-fill: #393939;
+}
+
+.depositTitle{
+    -fx-font-size: 1.8em;
+    -fx-fill: #393939;
+}
+
+.depositTextField {
+    -fx-pref-width: 250;
+    -fx-background-radius: 5;
+    -fx-text-fill: #393939;
+    -fx-font-size: 1.2em;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 2, 0, 0, 2);
+}
+
+.depositButton {
+    -fx-background-color: #004d4d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.2em;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 6);
+    -fx-pref-width: 250;
+}
+
+.depositLine {
+    -fx-alignment: center;
+}

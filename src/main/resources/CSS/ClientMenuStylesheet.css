@@ -1,0 +1,42 @@
+.mainVbox {
+    -fx-alignment: center;
+    -fx-background-color: #EEEEEE;
+}
+
+.anchorPane{
+    -fx-background-color: #EEEEEE;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, #666666, 4, 0, 0, 4);
+    }
+
+.firstVbox {
+
+    -fx-alignment: center;
+    -fx-background-color: #004d4d;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, #666666, 4, 0, 0, 0);
+}
+
+.secondVbox{
+    -fx-alignment: center;
+    -fx-background-color: #e6e6e6;
+    -fx-spacing: 20;
+    -fx-effect: dropshadow(three-pass-box, #666666, 4, 0, 0, 4);
+}
+
+.secondVbox_Button_white{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: #f2f2f2;
+    -fx-text-fill: #132A13;
+    -fx-effect: dropshadow(three-pass-box, #bfbfbf, 4, 0, 0, 4);
+}
+
+.secondVbox_Button_green{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: #004d4d;
+    -fx-text-fill: "white";
+    -fx-effect: dropshadow(three-pass-box, #bfbfbf, 4, 0, 0, 4  );
+
+}

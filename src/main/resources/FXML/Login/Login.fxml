@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" styleClass="mainWindow" stylesheets="@../../CSS/LoginStylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mazebank.Controllers.Login.LoginController">
+   <children>
+      <VBox fx:id="leftWindow" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="170.0" styleClass="leftWindow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox fx:id="loginWindow" layoutX="213.0" prefHeight="400.0" prefWidth="50.0" styleClass="loginWindow" stylesheets="@../../CSS/LoginStylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#393939" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textVbox" text="Choose your account type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="166.0" />
+            <Text fill="#393939" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textVbox" text="username">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="usernameField" prefHeight="25.0" prefWidth="49.0" style="-fx-pref-width: 200;" styleClass="textFields" />
+            <Text fill="#393939" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textVbox" text="password">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="226.0" styleClass="textFields" />
+            <Button fx:id="loginButton" mnemonicParsing="false" styleClass="loginButton" text="Log in" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="errorLabel" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

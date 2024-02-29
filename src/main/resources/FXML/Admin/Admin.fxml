@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="adminWindow"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.mazebank.Controllers.Admin.AdminController">
+
+        <left>
+            <fx:include source="Menu.fxml"/>
+        </left>
+
+        <center>
+            <fx:include source="CreateClients.fxml"/>
+        </center>
+
+</BorderPane>

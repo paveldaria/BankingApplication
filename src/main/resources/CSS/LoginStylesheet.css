@@ -1,0 +1,36 @@
+
+.leftWindow {
+    -fx-background-color: #004d4d;
+    -fx-alignment: center;
+}
+
+.mainWindow {
+    -fx-background-color: #f2f2f2;
+}
+
+.loginWindow {
+    -fx-background-color: #f2f2f2;
+    -fx-alignment: center-left;
+    -fx-padding: 0 80 0 50;
+    -fx-spacing: 6;
+}
+
+.loginButton {
+    -fx-background-color: #004d4d;
+    -fx-pref-width: 250;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.1em;
+}
+
+.textFields {
+    -fx-text-fill: #393939;
+    -fx-font-size: 1.1em;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 2, 0, 0,2);
+
+}
+
+.textVbox{
+    -fx-text-fill: #393939;
+    -fx-font-size: 1.2em;
+}
