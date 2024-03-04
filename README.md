@@ -1,6 +1,6 @@
 # Banking Application
-This is a Java-based banking application with a graphical user interface (GUI).     
-I developed this appllication using the JavaFX framework.
+This is a Java-based banking application with a graphical user interface.     
+I developed this appllication using the JavaFX framework. 
 
 Users can log in as an Admin or a Client. 
 
@@ -26,6 +26,8 @@ password: 123456
 
 You can find more authentication credentials in the database.   
 
+Before running this project, you have to configure the SDK. This project uses SDK 21.     
+Quick tutorial for setting up the SDK in IntelliJ IDEA: https://www.youtube.com/watch?v=udigo_qSp_k&list=LL&index=1 
 
 Below you can see some views of the application: 
 
